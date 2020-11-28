@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "前端工程化 demo",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint --ext .js test/ src/"
   },
   "husky": {
