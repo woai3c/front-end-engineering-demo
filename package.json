@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "前端工程化 demo",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage test/",
     "lint": "eslint --ext .js test/ src/",
     "start": "node server.js",
     "cypress": "cypress open"
