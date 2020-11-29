@@ -1,10 +1,12 @@
 {
   "name": "front-end-engineering-demo",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "前端工程化 demo",
   "scripts": {
-    "test": "jest --coverage",
-    "lint": "eslint --ext .js test/ src/"
+    "test": "jest",
+    "lint": "eslint --ext .js test/ src/",
+    "start": "node server.js",
+    "cypress": "cypress open"
   },
   "husky": {
     "hooks": {
@@ -25,12 +27,17 @@
   "homepage": "https://github.com/woai3c/front-end-engineering-demo#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "cypress": "^6.0.0",
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-import": "^2.22.0",
     "husky": "^4.3.0",
     "jest": "^26.4.2",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
