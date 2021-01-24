@@ -4,7 +4,7 @@
   "description": "前端工程化 demo",
   "scripts": {
     "test": "jest --coverage test/",
-    "lint": "eslint --ext .js test/ src/",
+    "lint": "eslint --ext .js,.ts,.tsx test/ src/",
     "start": "node server.js",
     "cypress": "cypress open"
   },
@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/woai3c/front-end-engineering-demo#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
     "babel-eslint": "^10.1.0",
     "cypress": "^6.0.0",
     "eslint": "^7.2.0",
@@ -35,7 +37,8 @@
     "husky": "^4.3.0",
     "jest": "^26.4.2",
     "stylelint": "^13.7.2",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-standard": "^20.0.0",
+    "typescript": "^4.1.3"
   },
   "dependencies": {
     "express": "^4.17.1"

@@ -10,7 +10,8 @@
     "parser": "babel-eslint",
     "extends": "airbnb-base",
     "plugins": [
-        "cypress"
+        "cypress",
+        "@typescript-eslint"
     ],
     "rules": {
         "no-console": "off",
