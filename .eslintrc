@@ -7,7 +7,7 @@
         "jest": true,
         "cypress/globals": true
     },
-    "parser": "babel-eslint",
+    "parser": "@typescript-eslint/parser",
     "extends": "airbnb-base",
     "plugins": [
         "cypress",
