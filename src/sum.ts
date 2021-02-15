@@ -1,6 +1,5 @@
-/* eslint-disable indent */
 export default function sum(a: number, b: number): number {
-return a + b
+    return a + b
 }
 
 let myName = 'Tom'
