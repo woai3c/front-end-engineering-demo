@@ -10,10 +10,14 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
+      "pre-commit": "lint-staged",
       "commit-msg": "node script/verify-commit.js",
       "pre-push": "npm test"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "eslint",
+    "test/**/*.{js,jsx,ts,tsx}": "eslint"
   },
   "license": "MIT",
   "author": "谭光志",
@@ -37,6 +41,7 @@
     "eslint-plugin-import": "^2.22.0",
     "husky": "^4.3.0",
     "jest": "^26.4.2",
+    "lint-staged": "^10.5.4",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0",
     "typescript": "^4.1.3"
