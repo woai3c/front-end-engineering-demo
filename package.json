@@ -5,6 +5,7 @@
   "scripts": {
     "test": "jest --coverage test/",
     "lint": "eslint --ext .js,.ts,.tsx test/ src/",
+    "lint:html": "htmlhint **/*.html",
     "start": "node server.js",
     "cypress": "cypress open"
   },
@@ -17,7 +18,9 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": "eslint",
-    "test/**/*.{js,jsx,ts,tsx}": "eslint"
+    "test/**/*.{js,jsx,ts,tsx}": "eslint",
+    "*.css": "stylelint",
+    "*.html": "htmlhint"
   },
   "license": "MIT",
   "author": "谭光志",
