@@ -20,7 +20,7 @@ module.exports = {
         'comma-dangle': ['error', 'always-multiline'],
         semi: ['error', 'never'],
         'object-curly-spacing': ['error', 'always'],
-        'max-len': ['error', 140],
+        'max-len': ['error', 120],
         'no-new': 'off',
         'linebreak-style': 'off',
         'import/extensions': 'off',
@@ -61,5 +61,7 @@ module.exports = {
         'import/no-useless-path-segments': 'off',
         'import/newline-after-import': 'off',
         'no-path-concat': 'off',
+        'no-useless-catch': 'off',
+        'no-restricted-syntax': 'off',
     },
 }
