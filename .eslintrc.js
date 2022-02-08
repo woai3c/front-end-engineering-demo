@@ -7,7 +7,11 @@ module.exports = {
         browser: true,
     },
     parser: '@typescript-eslint/parser',
-    extends: 'airbnb-base',
+    extends: [
+        'airbnb-base',
+        // 需要使用该插件（或其他的 ts 插件），否则某些 lib.dom.d.ts 的 interface 为认为是 not defined
+        'plugin:@typescript-eslint/recommended',
+    ],
     plugins: [
         '@typescript-eslint',
     ],
