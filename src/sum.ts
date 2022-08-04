@@ -4,4 +4,4 @@ export default function sum(a: number, b: number): number {
 
 let myName = 'Tom'
 
-type Foo = {}
+type Foo = 'number'

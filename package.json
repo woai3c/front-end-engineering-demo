@@ -7,14 +7,9 @@
     "lint": "eslint --ext .js,.ts,.tsx test/ src/",
     "lint:html": "htmlhint **/*.html",
     "start": "node server.js",
-    "cypress": "cypress open"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "FORCE_COLOR=1 node script/verify-commit.js",
-      "pre-push": "npm test"
-    }
+    "cypress": "cypress open",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": "eslint",
@@ -42,8 +37,8 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-import": "^2.22.0",
-    "htmlhint": "^0.14.2",
-    "husky": "^4.3.0",
+    "htmlhint": "^1.1.4",
+    "husky": "^8.0.1",
     "jest": "^26.4.2",
     "lint-staged": "^10.5.4",
     "stylelint": "^13.7.2",
